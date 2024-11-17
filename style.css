@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button, .signup-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login-button {
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+}
+
+.signup-button {
+    background-color: #f44e3b;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    height: 75%;
+    background-image: url('https://i.pinimg.com/736x/51/d7/ee/51d7ee7c937035636554a24d0d301f00.jpg');
+    background-size: cover;
+    background-position:center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #f44e3b;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.search-panel {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 8% auto;
+}
+
+.search-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    background: none;
+}
+
+.tab.active {
+    color: #f44e3b;
+    border-bottom: 2px solid #f44e3b;
+}
+
+.search-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-options input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search-button {
+    background-color: #f44e3b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trip-type {
+    text-align: center;
+}
+
+.trip-type label {
+    margin: 0 10px;
+    color: #555;
+}
+
+.trip-type input {
+    margin-right: 5px;
+}
